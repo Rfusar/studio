@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% include "componenti/header.html"%}
+    <link rel="stylesheet" href="/static/css/componenti/navbar.css">
+    <link rel="stylesheet" href="/static/css/siteHome.css">
+    <title>Studio.io</title>
+  </head>
+  <body>
+    {% include "componenti/navbar.html" %}
+    <section id="Hero">
+      <h1 id="wow">WOW !</h1>
+      <div id="divHero">
+        <h1 id="titleHero">Impara a Programmare...</h1>
+        <p>Esistono Tanti linguaggi per comunicare, trova il piu adatto per te</p>
+      </div>
+      <div class=cardSiteHome id="cardHeroCodice">
+        <i># Powershell</i>
+        <p id="heroCodice_Powershell"></p>
+        <i># Bash</i>
+        <p id="heroCodice_Bash"></p>
+      </div>
+      <div id="divHeroTech">
+        <div class="itemHeroTech">
+          <div>
+            <h1>Esistono varie tecnologie per condividere codice</h1>
+            <p class="p-itemHeroTech">Aiutano gli sviluppatori a rendere facile la gestion in produzione e non solo...</p>
+          </div>
+          <div id="cardHeroTech">
+            <p class="pointer">&gt; Docker</p>
+            <p class="pointer">&gt; Kubernetes</p>
+            <p class="pointer">&gt; Git</p>
+          </div>
+        </div>
+        <div class="itemHeroTech">
+          <div>
+            <h1>Diventerai un soprannaturale scrittore</h1>
+            <p class="p-itemHeroTech">Con linguaggi come HTML/CSS/JS, "Il trio magico"... creerai UX (User Expirance)</p>
+          </div>
+          <div>
+            <div class="itemAnimation"></div>
+            <div style="margin-left: 26%">
+              <img class="logoLinguaggi" src="/static/img/HTMLLogo.png"/>
+              <img class="logoLinguaggi" src="/static/img/CSSLogo.png"/>
+              <img class="logoLinguaggi" src="/static/img/JSLogo.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div id="containerHeroLinguaggi">
+      <div class="heroLinguaggi">
+        <div><a class="Python lang pointer" href="#">Python</a></div>
+        <div><a class="Batch lang pointer" href="#">Batch</a></div>
+        <div><a class="Bash lang pointer" href="#">Bash</a></div>
+        <div><a class="Golang lang pointer" href="#">Golang</a></div>
+        <div><a class="DotNet lang pointer" href="#">DotNet</a></div>
+        <div><a class="Java lang pointer" href="#">Java</a></div>
+      </div>
+      <div class="heroLinguaggi">
+        <div><a class="Python lang pointer" href="#">Python</a></div>
+        <div><a class="Batch lang pointer" href="#">Batch</a></div>
+        <div><a class="Bash lang pointer" href="#">Bash</a></div>
+        <div><a class="Golang lang pointer" href="#">Golang</a></div>
+        <div><a class="DotNet lang pointer" href="#">DotNet</a></div>
+        <div><a class="Java lang pointer" href="#">Java</a></div>
+      </div>
+    </div>
+
+    <section>
+      <div id="divEsempioServer">
+        <h1>Crea il tuo primo server con Flask</h1>
+        <p>Flask è una libreria python per creare un server in modo semplice e leggero</p>
+        <div id="itemEsempioCodice">
+          <pre id="codiceFlask"></pre> 
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="static/js/pagine/siteHome/app.js"></script>
+  </body>
+</html>
+

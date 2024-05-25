@@ -1,0 +1,196 @@
+body{
+  background-image: linear-gradient(to left, #080d40,#0a0d2e) ;
+}
+
+section, #Hero{
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to left, #080d40,#0a0d2e) ;
+  color: #fff;
+}
+#wow{
+  position: absolute;
+  top: -2%;
+  right: 20px;
+  opacity: 0;
+  font-size: 100px; 
+  font-style: italic;
+  color: purple;
+  text-shadow: 
+    0 0 10px purple,
+    0 0 30px purple,
+    0 0 60px purple,
+    0 0 90px purple;
+}
+#titleHero{
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+#cardHeroCodice{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  height: max-content;
+}
+#cardHeroCodice p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.cardSiteHome{
+  background-color: #020317;
+  border-radius: 20px;
+  width: 40%;
+  height: 20%;
+  padding: 10px 30px;
+}
+#divHero{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  margin-bottom: 50px;
+  padding: 3px;
+}
+.itemHeroTech{
+  opacity: 0;
+}
+.itemAnimation{
+  background-color: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  opacity: 0;
+}
+#divHeroTech{
+  position: absolute;
+  top: 60%;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+}
+#divHeroTech h1{
+  margin-bottom: 0;
+}
+.p-itemHeroTech{
+  margin: 0 0 10px 20px;
+}
+#cardHeroTech p{
+  transition: 1s;
+}
+#cardHeroTech p:hover{
+  color:red
+}
+.logoLinguaggi{
+  opacity: 0
+}
+
+
+@keyframes slide{
+from {
+  transform: translateX(0)
+}
+to { 
+  transform: translateX(-100%)
+}
+}
+#containerHeroLinguaggi{
+  background-image: linear-gradient(to left, #080d40,#0a0d2e) ;
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  margin-left: 50px;
+  white-space: nowrap;
+}
+.heroLinguaggi{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  animation: 20s slide infinite linear;
+}
+.heroLinguaggi div{
+    min-width: 300px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    font-size: 50px;
+}
+.lang{
+  transition: .7s;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Python:hover{
+  color: yellow;
+  text-shadow: 0 0 20px yellow, 0 0 40px yellow, 0 0  60px yellow;
+}
+.Batch:hover{
+  color: grey;
+  text-shadow: 0 0 20px grey, 0 0 40px grey, 0 0  60px grey;
+}
+.Bash:hover{
+  color: green;
+  text-shadow: 0 0 20px green, 0 0 40px green, 0 0  60px green;
+}
+.Golang:hover{
+  color: lightblue;
+  text-shadow: 0 0 20px lightblue, 0 0 40px lightblue, 0 0  60px lightblue;
+}
+.DotNet:hover{
+  color: purple;
+  text-shadow: 0 0 20px purple, 0 0 40px purple, 0 0  60px purple;
+}
+.Java:hover{
+  color: red;
+  text-shadow: 0 0 20px red, 0 0 40px red, 0 0  60px red; 
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  #divHero{
+    left: 2%
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  /*Fare qualcosa al navbar -> aggiunta menu a tendina*/
+  #divHero{
+    top: 5%;
+  }
+  #cardHeroCodice{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+  }
+}
+
+
+
+#divEsempioServer{
+  position: absolute;
+  top: 8%;
+  left: 2%;
+}
+#divEsempioServer h1{
+  font-size: 50px;
+  margin-bottom: 0;
+}
+#itemEsempioCodice{
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  height: 60vh;
+  width: 50vw;
+  background-color: #020317;
+  border-radius: 20px;
+  padding: 20px;
+}
+

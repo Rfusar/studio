@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/login/login.css" >
+    <title>Login</title>
+  </head>
+  <body>
+
+  <form method="post" action="/fetchLogin" id="cardLogin">
+    <h1 id="titleLogin">Login</h1>
+    <p>Benvenuto a Studio.io, qui puoi trovare materiali per fare levelUp</p>
+    <div id="containerLogin">
+      <input class="inputLogin" type="email" placeholder="Email"/>
+      <input class="inputLogin" type="password" placeholder="password"/>
+      <button id="btnLogin">INVIA</button>
+    </div>
+      <div>
+        <a href="#">Cambia password</a>
+        <a href="#" >Registrati</a>
+      </div>
+    </div>
+  </form>    
+
+  <script>
+    window.addEventListener("resize", ()=>console.log(window.innerWidth))
+  </script>
+
+  </body>
+</html>
+
