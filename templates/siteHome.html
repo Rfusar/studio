@@ -7,6 +7,7 @@
     {% include "componenti/header.html"%}
     <link rel="stylesheet" href="/static/css/componenti/navbar.css">
     <link rel="stylesheet" href="/static/css/siteHome.css">
+    <link rel="stylesheet" href="/static/css/altreRisoluzioni/siteHome.css">
     <title>Studio.io</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
       <h1 id="wow">WOW !</h1>
       <div id="divHero">
         <h1 id="titleHero">Impara a Programmare...</h1>
-        <p>Esistono Tanti linguaggi per comunicare, trova il piu adatto per te</p>
+        <p class="resizeSpaceText">Esistono Tanti linguaggi per comunicare, trova il piu adatto per te</p>
       </div>
       <div class=cardSiteHome id="cardHeroCodice">
         <i># Powershell</i>
@@ -26,23 +27,23 @@
       <div id="divHeroTech">
         <div class="itemHeroTech">
           <div>
-            <h1>Esistono varie tecnologie per condividere codice</h1>
-            <p class="p-itemHeroTech">Aiutano gli sviluppatori a rendere facile la gestion in produzione e non solo...</p>
+            <h1 class="resizeSpaceText">Esistono varie tecnologie per condividere codice</h1>
+            <p class="resizeSpaceText">Aiutano gli sviluppatori a rendere facile la gestion in produzione e non solo...</p>
           </div>
           <div id="cardHeroTech">
-            <p class="pointer">&gt; Docker</p>
-            <p class="pointer">&gt; Kubernetes</p>
-            <p class="pointer">&gt; Git</p>
+            <a id="urlDocker" class="pointer link">&gt; Docker</a>
+            <a id="urlKubernetes" class="pointer link">&gt; Kubernetes</a>
+            <a id="urlGit" class="pointer link">&gt; Git</a>
           </div>
         </div>
         <div class="itemHeroTech">
           <div>
-            <h1>Diventerai un soprannaturale scrittore</h1>
-            <p class="p-itemHeroTech">Con linguaggi come HTML/CSS/JS, "Il trio magico"... creerai UX (User Expirance)</p>
+            <h1 class="resizeSpaceText">Diventerai un soprannaturale scrittore</h1>
+            <p class="resizeSpaceText">Con linguaggi come HTML/CSS/JS, "Il trio magico"... creerai UX (User Expirance) unici.</p>
           </div>
           <div>
             <div class="itemAnimation"></div>
-            <div style="margin-left: 26%">
+            <div id="containerLoghiLinguaggi">
               <img class="logoLinguaggi" src="/static/img/HTMLLogo.png"/>
               <img class="logoLinguaggi" src="/static/img/CSSLogo.png"/>
               <img class="logoLinguaggi" src="/static/img/JSLogo.png"/>
@@ -71,13 +72,43 @@
       </div>
     </div>
 
-    <section>
-      <div id="divEsempioServer">
-        <h1>Crea il tuo primo server con Flask</h1>
-        <p>Flask è una libreria python per creare un server in modo semplice e leggero</p>
-        <div id="itemEsempioCodice">
-          <pre id="codiceFlask"></pre> 
-        </div>
+    <section id="divEsempioServer">
+      <div>
+        <h1 class="resizeSpaceText textEsempioServer">Crea il tuo primo server con Flask</h1>
+        <p class="resizeSpaceText textEsempioServer"><i><a id="urlFlask" class="pointer link">Flask</a></i> è una framework python per creare un server in modo semplice.</p>
+        <p class="resizeSpaceText textEsempioServer">
+          Ottimo per progetti di piccole e medie dimensioni.
+          Puoi creare API anche se <i><a id="urlFastAPI" class="pointer link">FastAPI</a></i> sarebbe una scelta migliore, 
+          però anche Flask è un ottima scelta, siti statici, un po come questo :).
+          Basta inizializzare flask (guarda il codice alla tua sinistra), aggiungere una secret-key 
+          per farsi che il server utilizzi le sessioni,
+          cosi puoi personalizzare il sito in base all'utente loggato.
+          Di default la cartella per l'HTML è <b>templates</b>, 
+          e per i fogli CSS e javascript è <b>static</b>.</p>
+          <pre>
+          esempio di albero file:
+          
+          |__server.py
+          |
+          |__static/
+             |
+             |__css/
+                |
+                |__style.css
+             |
+             |__js/
+                |
+                |__main.js
+          |
+          |__templates/
+             |
+             |__index.html
+
+          
+          </pre> 
+      </div>
+      <div id="itemEsempioCodice">
+        <pre id="codiceFlask"></pre> 
       </div>
     </section>
 

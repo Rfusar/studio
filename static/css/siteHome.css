@@ -2,8 +2,7 @@ body{
   background-image: linear-gradient(to left, #080d40,#0a0d2e) ;
 }
 
-section, #Hero{
-  position: relative;
+section {
   height: 100vh;
   background-image: linear-gradient(to left, #080d40,#0a0d2e) ;
   color: #fff;
@@ -21,6 +20,13 @@ section, #Hero{
     0 0 30px purple,
     0 0 60px purple,
     0 0 90px purple;
+}
+.resizeSpaceText{
+  width: 80%
+}
+.textEsempioServer{
+  width: 50%;
+  margin-left: 30px;
 }
 #titleHero{
   font-size: 50px;
@@ -69,17 +75,25 @@ section, #Hero{
   justify-content: space-around;
   width: 100vw;
 }
+#cardHeroTech{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 #divHeroTech h1{
   margin-bottom: 0;
 }
-.p-itemHeroTech{
-  margin: 0 0 10px 20px;
+.link{
+  text-decoration: none;
+  color: #fff;
+  transition: .6s;
 }
-#cardHeroTech p{
-  transition: 1s;
+.link:hover{
+  color:red;
+
 }
-#cardHeroTech p:hover{
-  color:red
+#containerLoghiLinguaggi{
+  margin-left: 26%;
 }
 .logoLinguaggi{
   opacity: 0
@@ -96,23 +110,22 @@ to {
 }
 #containerHeroLinguaggi{
   background-image: linear-gradient(to left, #080d40,#0a0d2e) ;
-  width: 95vw;
+  width: 90%;
   display: flex;
   flex-direction: row;
   overflow: hidden;
   position: relative;
-  margin-left: 50px;
+  margin-left: 5%;
   white-space: nowrap;
 }
 .heroLinguaggi{
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   animation: 20s slide infinite linear;
 }
 .heroLinguaggi div{
-    min-width: 300px;
-    height: 200px;
+    height: 20%;
     text-align: center;
     line-height: 200px;
     color: #fff;
@@ -120,8 +133,7 @@ to {
 }
 .lang{
   transition: .7s;
-  border-radius: 20px;
-  padding: 10px;
+  padding-left: 130px;
   color: #fff;
   text-decoration: none;
 }
@@ -151,33 +163,11 @@ to {
   text-shadow: 0 0 20px red, 0 0 40px red, 0 0  60px red; 
 }
 
-
-
-
-@media only screen and (max-width: 1100px) {
-  #divHero{
-    left: 2%
-  }
-}
-
-@media only screen and (max-width: 777px) {
-  /*Fare qualcosa al navbar -> aggiunta menu a tendina*/
-  #divHero{
-    top: 5%;
-  }
-  #cardHeroCodice{
-    position: absolute;
-    top: 40%;
-    left: 20%;
-  }
-}
-
-
-
 #divEsempioServer{
-  position: absolute;
-  top: 8%;
-  left: 2%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 #divEsempioServer h1{
   font-size: 50px;
@@ -185,12 +175,11 @@ to {
 }
 #itemEsempioCodice{
   position: absolute;
-  left: 100%;
-  top: 100%;
-  height: 60vh;
-  width: 50vw;
+  margin-top: 10%;
+  left: 57%;
+  height: 50vh;
+  width: 35vw;
   background-color: #020317;
   border-radius: 20px;
   padding: 20px;
 }
-

@@ -1,9 +1,7 @@
 import {animateText} from '../index.js'
-import codici from '../pagine/siteHome/consts.js'
+import {codici} from '../pagine/siteHome/consts.js'
 
 export default function GSAP_INIT(){
-  if (window.innerWidth > 800){
-
     gsap.registerPlugin(ScrollTrigger)
     const tl = gsap.timeline()
   
@@ -16,11 +14,11 @@ export default function GSAP_INIT(){
       }
     })
     gsap.to("#divHero", {
-        x:100,
+        xPercent: 5,
         duration: 1
     })
     gsap.to("#cardHeroCodice", {
-      x: -150,
+      xPercent: -20,
       duration: 1.5
     })
     gsap.to(".itemHeroTech", {
@@ -32,15 +30,15 @@ export default function GSAP_INIT(){
 
     gsap.fromTo(".itemAnimation", 
       {
-        x: 500,
-        y: 70,
+        xPercent: 700,
+        yPercent: 70,
         rotation: 90,
       },
       {
         duration: 5,
         opacity: 1,
-        x: 0,
-        y: 5,
+        xPercent: 0,
+        yPercent: 2,
         rotation: 360,
         borderRadius: 7,
         repeat: 1,
@@ -50,7 +48,7 @@ export default function GSAP_INIT(){
     tl.to("#wow", {
       delay: 8,
       y: -50,
-      x: -1270,
+      xPercent: -430,
       opacity: 1,
       rotation: 360,
       duration: 2,
@@ -61,5 +59,21 @@ export default function GSAP_INIT(){
       duration: 3,
       opacity: 1
     })
-  }
+    const imgTendina = document.querySelector("#imgTendina")
+    let click=false
+    imgTendina.addEventListener("click", ()=>{
+      if (click == false){
+        gsap.to("#menuTendinaSiteHome", {
+          duration: 0.5,
+          height: "100vh",
+        })
+      }
+      else{
+        gsap.to("#menuTendinaSiteHome", {
+          duration: 0.5,
+          height: 0,
+        })
+      }
+      click = !click
+    })
 }
