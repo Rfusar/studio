@@ -3,9 +3,12 @@ body{
 }
 
 section {
-  height: 100vh;
   background-image: linear-gradient(to left, #080d40,#0a0d2e) ;
   color: #fff;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  position: relative
 }
 #wow{
   position: absolute;
@@ -79,6 +82,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%
 }
 #divHeroTech h1{
   margin-bottom: 0;
@@ -93,7 +97,7 @@ section {
 
 }
 #containerLoghiLinguaggi{
-  margin-left: 26%;
+  padding-left: 15%;
 }
 .logoLinguaggi{
   opacity: 0
@@ -164,7 +168,7 @@ to {
 }
 
 #divEsempioServer{
-  margin-top: 5%;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

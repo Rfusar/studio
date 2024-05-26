@@ -1,41 +1,63 @@
-@media (max-width: 1600px){
+@media (max-height: 900px){
+  #cardHeroCodice{
+    display:none
+  }
+  #titleHero{
+    margin-top: 100px
+  }
+}
+
+
+
+@media (max-width: 1700px){
   #divEsempioServer{
     display: block;
-    margin-top: 100px;
   }
   #divEsempioServer:nth-child(1){
-    margin-top: 0;
+    margin: 0 0 20px 0;
   }
 
   #itemEsempioCodice{
-    display:none
+    width: 40%;
+    left: 55%;
+    top: 30%;
+    margin-top: 0
   }
   #containerHeroLinguaggi{
     display: none;
   }
-
 }
 
 @media (max-width: 1200px){
-  section {
-    height: 200vh;
-  }
   #divHero{
-    left: 2%
+    width: 70%;
+    left: 2%;
   }
   #divHeroTech{
     flex-direction: column;
-    margin: 0 30px 100px 30px;
+    margin-bottom: 100px;
+    width: 100%;
+    padding-left: 30px
   } 
-  #containerHeroLinguaggi{
-    bottom: -500px;
+  #divEsempioServer{
+    margin-top: 200px
+  }
+  #itemEsempioCodice{
+    width: 430px;
+    left: 2%;
+    top: 45%;
+    margin-top: 0
+  }
+  #alberoCodice{
+    position: absolute;
+    left: 60%;
+    top: 30%;
   }
 }
 
 
 
 @media (max-width: 850px) {
-  /*Fare qualcosa al navbar -> aggiunta menu a tendina*/
   #divHero{
     top: 5%;
   }
@@ -46,7 +68,6 @@
     display: block
   }
   #menuTendinaSiteHome{
-    display: block;
     background-color: #fff; 
     color: #000; 
     width: 100vw; 
@@ -58,7 +79,6 @@
     height: 100%
   }
   #menuTendinaSiteHome div ul{
-    display: flex; 
     flex-direction: column; 
     margin:0; 
     justify-content: space-around; 
@@ -68,21 +88,36 @@
   #cardHeroCodice{
     display: none
   }
+  #containerLoghiLinguaggi{
+    padding-left: 5px;
+  } 
+  #alberoCodice{
+    position: static;
+  }
+  #itemEsempioCodice{
+    display: none
+  }
+  .textEsempioServer{
+    padding-left: 20px;
+    width: 80%;
+  }
 }
 
 @media (max-width: 400px){
   #titleHero{
-    font-size: 40px
-  }
-  #divEsempioServer{
-    margin-top: 200px;
-  }
-  #containerLoghiLinguaggi{
-    margin-left: 5%;
+    font-size: 40px;
+    margin-top: 20px;
   }
   .textEsempioServer{
-    margin-left: 20px;
+    padding-left: 20px;
     width: 80%;
+  }
+  #divEsempioServer{
+    margin-top: 350px;
+  }
+  #divEsempioServer h1{
+    font-size: 35px;
+    padding-top: 70px;
   }
 
 }

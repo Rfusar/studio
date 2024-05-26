@@ -30,7 +30,7 @@ export default function GSAP_INIT(){
 
     gsap.fromTo(".itemAnimation", 
       {
-        xPercent: 700,
+        xPercent: 0,
         yPercent: 70,
         rotation: 90,
       },
@@ -44,16 +44,16 @@ export default function GSAP_INIT(){
         repeat: 1,
         yoyo: true // Makes the animation reverse back and forth
       }, "+=2")
-  
-    tl.to("#wow", {
-      delay: 8,
-      y: -50,
-      xPercent: -430,
-      opacity: 1,
-      rotation: 360,
-      duration: 2,
-    }).to("#wow", {delay: 2, opacity: 0, duration: 2})
-
+    if(window.innerWidth > 1720){ 
+      tl.to("#wow", {
+        delay: 8,
+        yPercent: 150,
+        xPercent: -430,
+        opacity: 1,
+        rotation: 360,
+        duration: 2,
+      }).to("#wow", {delay: 2, opacity: 0, duration: 2})
+    }
     gsap.to(".logoLinguaggi", {
       delay: 15,
       duration: 3,
@@ -66,12 +66,15 @@ export default function GSAP_INIT(){
         gsap.to("#menuTendinaSiteHome", {
           duration: 0.5,
           height: "100vh",
+          display: "flex",
+          alignItems: "center",
         })
       }
       else{
         gsap.to("#menuTendinaSiteHome", {
           duration: 0.5,
           height: 0,
+          display: "none"
         })
       }
       click = !click

@@ -12,8 +12,7 @@ const urlGit = document.querySelector("#urlGit")
 const codici = [
   {
     elemento: Flask,
-    codice: `
-from flask Import Flask, jsonify, request
+    codice: `from flask Import Flask, jsonify, request
 
 app = Flask(__name__)
 app.secret_key = b'superSecretKey'
@@ -21,12 +20,12 @@ app.secret_key = b'superSecretKey'
 
 #Le funzioni posso nominate come meglio credi
 
-@app.route("/", methods=["GET"])  #Esempio di route con metodo GET
+@app.route("/", methods=["GET"]) 
 def Home():
   return "<h1>sciao belu</h1>"
 
 
-@app.route("/api/saluto", methods=["POST"]) #Esempio di route con metodo POST
+@app.route("/api/saluto", methods=["POST"]) 
 def api_saluto():
   reqBody = {k:v for k,v in request.json.items()}
   if reqBody.get("salto") == "yes":
