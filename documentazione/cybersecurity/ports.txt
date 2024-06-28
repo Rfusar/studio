@@ -1,0 +1,50 @@
+una porta può essere "chiusa" oppure "aperta".
+in un server o sistema informatico se è aperta 
+crea una possibilià di accesso, e nelle peggiori casistiche
+qualcuno può accedere senza autorizzazione.
+
+esistono due categorie di porte:
+    - TCP -> Transmition Control Protocol
+    - UDP -> User Datagram Protocol
+
+*** TCP ***
+    - è una "connessione orientata", significa che la connessione tra client e server deve essere instanziata prima che i data vengano inviati.
+    -il server deve essere in ascolto aspettando che il client faccia richieste.
+
+*** UDP ***
+    -utilizza un modello di comunicazione senza connessione, non c'è una "stretta di mano" tra client e server, quindi non garantisce che i dati iniati arrivano tutti a destinazione
+
+
+Esistono 65.535 porte TCP e 65.535 porte UDP diverse, ciascuna indicata da un numero. Di seguito sono elencate alcune delle porte TCP e UDP più conosciute
+
+* = TCP; + = UDP;
+
++---------------+-----------------+
+|   Port        | Protocol        |
++---------------+-----------------+
+|               |                 |
+| 20/21 *       |    FTP          |  -> File Transfer Protocol
+|               |                 | 
+| 22 *          |    SSH          |  -> Secure Shell
+|               |                 |
+| 23 *          |   Telnet        |  -> TErminaL NETwork
+|               |                 |
+| 25 *          |    SMTP         |  -> Sample Mail Transfer Portocol 
+|               |                 |
+| 80 *          |    HTTP         |  -> Hypertext Transfer Protocol
+|               |                 |
+| 162 *+        |    SNMP         |  -> Simple Network Management Protocol
+|               |                 |
+| 389 *+        |    LDAP         |  -> Lightweight Directory Access Protocol
+|               |                 |
+| 443 *         | SSL/TLS(HHTPS)  |  -> Secure Sockets Layer/Transport Layer Security
+|               |                 |
+| 445 *         |    SMB          |  -> Server Message Block
+|               |                 |
+| 3389 *        |    RDP          |  -> Remote Desktop Protocol
+|               |                 |
++---------------+-----------------+
+
+
+
+link = https://packetlife.net/media/library/23/common-ports.pdf

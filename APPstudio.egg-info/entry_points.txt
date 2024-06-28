@@ -1,5 +1,0 @@
-[console_scripts]
-build = scripts.build:main
-exe = scripts.eseguibile:main
-github = scripts.github:main
-start = scripts.start:main
